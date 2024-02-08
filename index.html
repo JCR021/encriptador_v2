@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="shortcut icon" href="img/favicon.png">
+        <title>Encriptador JCRO</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="reset.css">
+    </head>
+    <body class="cuerpo">
+       
+        </div>
+
+        <header class="encabe">
+
+            <h1 class="logo"> <img src="img/logo_transparent (2).png" alt="logo de la pagina"></h1>
+
+        </header>
+
+        <main>
+
+            <fieldset class="a-encriptar">
+
+                <div>
+                    <form name="formulario">
+                        <label for="mensaje"></label>
+                        <textarea cols="70" rows="10" id="mensaje" class="mensaje" required placeholder="Escribe un mensaje aqui para Encriptar o  Desencriptar ..." ></textarea>
+                    </form>
+                </div>
+
+                <p class="warn">&#x2705 Solo letras minúsculas y nada de acentos, por favor.</p>
+
+                <div>
+
+                    <input type="button" value="Encriptar" class="encrypt">
+                    <input type="button" value="Desencriptar" class="decrypt">
+
+                </div>
+                
+            </fieldset>
+
+            <section  class="resultado">
+                <div class="ninos">
+                    <img src="img/ni;o-fotor-bg-remover-20240207173117.png" alt="nino con una lupa" class="nino">
+
+                    <p class="encontra">Ningún mensaje fue encontrado!</p>
+                </div>
+
+                <div class="contenedor-resultado">
+                    <p class="texto-resultado"></p>
+                </div>
+
+                <input type="button" value="Copiar" class="copiar">
+
+            </section>
+
+        </main>
+
+        <script src="apps.js"></script>
+    </body>
+
+    
+</html>

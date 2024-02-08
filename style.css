@@ -1,0 +1,163 @@
+body {
+    background: gray;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    margin: -60px 0;
+    width: 120px;
+    display: inline-block;
+}
+
+.encrypt, .decrypt {
+    width: 20%;
+    padding: 15px 0;
+    font-size: 21px;
+    font-weight: bold;
+    color: white;
+    background-color: purple;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.copiar {
+    width: 30%;
+    padding: 15px 0;
+    font-size: 21px;
+    font-weight: bold;
+    color: white;
+    background-color: purple;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    right: 35%;
+}
+
+.encrypt:hover, .decrypt:hover, .copiar:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+    background: darkblue;
+    transform: scale(1.20);
+}
+
+.mensaje {
+    display: inline-block;
+    margin: 20px 0 20px 0;
+    padding: 10px 25px;
+    width: 40%;
+    height: 300px;
+    background: linear-gradient(#9b9b9b, white);
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.50);
+}
+
+.warn {
+    margin: 10px 10px;
+}
+
+.a-encriptar {
+    display: inline-block;
+    width: 60%;
+    margin: -100px 0 0 240px;
+}
+
+.resultado {
+    display: inline-block;
+    border: black;
+    padding: 30px 10px;
+    background: linear-gradient(#9b9b9b, white);
+    box-sizing: border-box;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.50);
+    width: 25%;
+    height: 500px;
+    margin: -80px 0 0 -300px;
+    overflow: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.nino {
+    display: inline-block;
+    width: 85%;
+    height: auto;
+}
+
+.texto-resultado {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+.encontra {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.ocultar {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .a-encriptar, .resultado, .mensaje {
+        width: 80%;
+    }
+
+    .encrypt, .decrypt, .copiar {
+        width: 45%;
+    }
+
+    .mensaje {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .a-encriptar, .resultado, .mensaje {
+        width: 100%;
+    }
+
+    .encrypt, .decrypt, .copiar {
+        width: 45%;
+        margin: 10px 0;
+    }
+
+    .mensaje {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    .encrypt, .decrypt, .copiar {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .mensaje {
+        width: 100%;
+        height: auto;
+    }
+}
